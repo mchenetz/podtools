@@ -24,12 +24,12 @@ podtools config -a [apikey]
 ```
 podtools convert -i [file] -o [file]
 ```
-#Transcribe a file using OpenAI Whisper
+# Transcribe a file using OpenAI Whisper
 
 ```
 podtools transcribe -i [file]
 ```
-#Use OpenAI to return a query based on a text file
+# Use OpenAI to return a query based on a text file
 ```
 podtools -i [file] -q "Provide a youtube description from the attached podcast episode"
 ```
