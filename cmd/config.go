@@ -34,7 +34,7 @@ func init() {
 	configCmd.PersistentFlags().StringP("inputfile", "i", "./input.mp4", "Convert Input file")
 	configCmd.PersistentFlags().StringP("outputfile", "o", "./output.mp3", "Convert Output file")
 	configCmd.PersistentFlags().StringP("transcribefile", "t", "./transcribe.mp3", "Transcribe File")
-	configCmd.PersistentFlags().StringP("defaultfolder", "f", ".", "Default Folder")
+	configCmd.PersistentFlags().StringP("defaultfolder", "f", "", "Default Folder")
 	configCmd.PersistentFlags().StringP("apikey", "a", viper.GetString("apikey"), "OpenAI API Key")
 	viper.BindPFlag("inputfile", configCmd.PersistentFlags().Lookup("inputfile"))
 	viper.BindPFlag("outputfile", configCmd.PersistentFlags().Lookup("outputfile"))

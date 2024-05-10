@@ -34,7 +34,7 @@ func init() {
 	rootCmd.AddCommand(convertCmd)
 	convertCmd.Flags().StringP("inputfile", "i", "./input.mp4", "Convert Input file")
 	convertCmd.Flags().StringP("outputfile", "o", "./output.mp3", "Convert Output file")
-	convertCmd.Flags().StringP("defaultfolder", "f", ".", "Default Folder")
+	convertCmd.Flags().StringP("defaultfolder", "f", "", "Default Folder")
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command

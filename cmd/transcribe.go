@@ -37,7 +37,7 @@ var transcribeCmd = &cobra.Command{
 
 func init() {
 	transcribeCmd.Flags().StringP("tinputfile", "i", "./transcribe.mp3", "File path")
-	transcribeCmd.Flags().StringP("defaultfolder", "f", ".", "Default Folder")
+	transcribeCmd.Flags().StringP("defaultfolder", "f", "", "Default Folder")
 	rootCmd.AddCommand(transcribeCmd)
 
 	// Here you will define your flags and configuration settings.
